@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{0bfd393e-df0e-479e-add7-7aff17172c94}">
+        <property name="assetPath">
+            <value>Characters/Actions/door-front-opening-a.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.5843764172335602</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
+        </relationship>
+    </object>
+</objects>

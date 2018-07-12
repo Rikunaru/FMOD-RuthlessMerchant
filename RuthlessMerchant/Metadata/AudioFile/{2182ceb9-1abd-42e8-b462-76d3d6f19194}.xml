@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{2182ceb9-1abd-42e8-b462-76d3d6f19194}">
+        <property name="assetPath">
+            <value>Ambience/amb_thunderstorm_02.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>9.5</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,11 @@
+{67eb3b02-07e0-48ad-b4ff-f22efdfbe04a} event:/Ambience/Forest
+{f6193987-62b3-4153-a847-f04c500049b4} event:/Ambience/Torch
+{893b3fc4-dbcb-4f17-a466-08b3dccf3329} event:/Ambience/Tundra
+{ff8024d3-9cda-44b4-90c3-58b48ba55bcf} event:/Characters/Player Footsteps_sample
+{8fe9629b-9496-45ba-b58d-6495f62a6466} event:/Characters/PlayerSteps
+{a1e0290f-a6d8-4ffa-9fc5-b23aaabc47c9} event:/Music/MenuDraft
+{ff151beb-9706-409f-a74d-329009ab1cb2} bus:/
+{aa075bc9-8fe8-4607-9e29-c9a76a231b6a} bus:/Reverb
+{cdb38045-8ac9-437d-a9b4-0c71ed86455b} bank:/Music
+{bc675378-90eb-47c8-9253-25a627374886} bank:/SFX
+{277cc9a4-5b9f-48a0-81c5-cbc8b63e4184} bank:/Master Bank
