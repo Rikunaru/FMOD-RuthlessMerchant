@@ -95,6 +95,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{52dde295-3e03-43d9-866d-3090410167e6}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{e22f1fc8-f810-44df-b20f-42dff96c234b}</destination>
         </relationship>
@@ -124,7 +127,7 @@
     </object>
     <object class="EventMixerGroup" id="{6ab82f5d-1094-4bac-b9a6-66fdacbd0bd1}">
         <property name="volume">
-            <value>-33</value>
+            <value>-27.5</value>
         </property>
         <property name="name">
             <value>Frogs</value>
@@ -152,7 +155,7 @@
     </object>
     <object class="EventMixerGroup" id="{c27911f0-efb5-43df-adcc-120d5adc021b}">
         <property name="volume">
-            <value>-30</value>
+            <value>-22.5</value>
         </property>
         <property name="name">
             <value>Zirpen</value>
@@ -187,19 +190,19 @@
             <value>56</value>
         </property>
         <property name="minimumScatterDistance">
-            <value>15</value>
+            <value>10</value>
         </property>
         <property name="maximumScatterDistance">
-            <value>100</value>
-        </property>
-        <property name="volumeRandomization">
-            <value>-15.5</value>
+            <value>80</value>
         </property>
         <relationship name="sound">
             <destination>{b7c31b36-c357-416d-814e-9cf6ec653443}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{700778ed-8ca3-4951-8747-8a1fcc52219c}">
+        <property name="volume">
+            <value>3</value>
+        </property>
         <property name="name">
             <value>Birds</value>
         </property>
