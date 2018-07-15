@@ -190,10 +190,13 @@
             <value>56</value>
         </property>
         <property name="minimumScatterDistance">
-            <value>10</value>
+            <value>15</value>
         </property>
         <property name="maximumScatterDistance">
             <value>80</value>
+        </property>
+        <property name="volumeRandomization">
+            <value>-30.5</value>
         </property>
         <relationship name="sound">
             <destination>{b7c31b36-c357-416d-814e-9cf6ec653443}</destination>
