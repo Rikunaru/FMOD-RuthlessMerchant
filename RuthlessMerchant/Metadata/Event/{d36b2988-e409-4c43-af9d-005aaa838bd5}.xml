@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{d36b2988-e409-4c43-af9d-005aaa838bd5}">
         <property name="name">
-            <value>Atmo World</value>
+            <value>Atmo Forest</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
@@ -169,10 +169,10 @@
     </object>
     <object class="SoundScatterer" id="{779cc5b6-23cf-47e9-8bf1-38f56825f874}">
         <property name="start">
-            <value>1</value>
+            <value>3</value>
         </property>
         <property name="length">
-            <value>44</value>
+            <value>42</value>
         </property>
         <property name="volume">
             <value>10</value>
