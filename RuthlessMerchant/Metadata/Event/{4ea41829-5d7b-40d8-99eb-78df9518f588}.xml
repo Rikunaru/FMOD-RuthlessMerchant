@@ -92,8 +92,14 @@
         <property name="length">
             <value>0.50062499999999999</value>
         </property>
-        <property name="voiceStealing">
-            <value>3</value>
+        <property name="minimumTimeDelay">
+            <value>400</value>
+        </property>
+        <property name="maximumTimeDelay">
+            <value>840</value>
+        </property>
+        <property name="volume">
+            <value>-3.5</value>
         </property>
         <relationship name="modulators">
             <destination>{95d8bb1a-dba5-41a7-b8af-c76cb96140ff}</destination>
@@ -108,7 +114,7 @@
     </object>
     <object class="EventMixerGroup" id="{a1ff92af-2ab7-4297-9dd1-d6ebdf2a18c8}">
         <property name="volume">
-            <value>10</value>
+            <value>-20</value>
         </property>
         <property name="name">
             <value>Audio 1</value>
@@ -136,7 +142,7 @@
             <value>pitch</value>
         </property>
         <property name="amount">
-            <value>10.416666</value>
+            <value>7</value>
         </property>
     </object>
     <object class="RandomizerModulator" id="{c9899519-1672-4ac1-87cf-d9a0e1f57b65}">
