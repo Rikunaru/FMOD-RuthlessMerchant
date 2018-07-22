@@ -8,7 +8,7 @@
             <value>2</value>
         </property>
         <relationship name="folder">
-            <destination>{1f115794-baca-44fb-a973-3d988bc9698b}</destination>
+            <destination>{ddc86736-f7bd-4b11-a2da-dac504e21881}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{bf7d886d-3f4a-48a1-84e7-aa8bb17d22e2}</destination>
@@ -60,7 +60,7 @@
     <object class="MarkerTrack" id="{8395a48e-301d-4535-9124-91eca279a6cd}"/>
     <object class="GroupTrack" id="{379c1a55-fa0d-4f7b-a6a2-cca4fb389d82}">
         <relationship name="modules">
-            <destination>{1cbd1663-f7a1-435f-a9e8-e3035c9b731b}</destination>
+            <destination>{523cb92a-4fd6-445f-928f-5b10f868e4ef}</destination>
         </relationship>
         <relationship name="mixerGroup">
             <destination>{b9a2d9e6-af07-4246-ba8c-c43961960e2c}</destination>
@@ -68,7 +68,7 @@
     </object>
     <object class="Timeline" id="{066a8694-daf8-4022-b00b-44ad0d986a09}">
         <relationship name="modules">
-            <destination>{1cbd1663-f7a1-435f-a9e8-e3035c9b731b}</destination>
+            <destination>{523cb92a-4fd6-445f-928f-5b10f868e4ef}</destination>
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{882ecefc-1cd6-455a-b3bd-9f1b1d3531ba}">
@@ -88,12 +88,12 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{2e8ca00a-57e7-470b-8ac3-590502e39664}"/>
-    <object class="SingleSound" id="{1cbd1663-f7a1-435f-a9e8-e3035c9b731b}">
+    <object class="SingleSound" id="{523cb92a-4fd6-445f-928f-5b10f868e4ef}">
         <property name="length">
             <value>1.5843764172335602</value>
         </property>
         <relationship name="audioFile">
-            <destination>{9f3d43d3-b35b-41ec-9fe9-b23a5586ecc8}</destination>
+            <destination>{0bfd393e-df0e-479e-add7-7aff17172c94}</destination>
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{b9a2d9e6-af07-4246-ba8c-c43961960e2c}">

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{9f3d43d3-b35b-41ec-9fe9-b23a5586ecc8}">
+    <object class="AudioFile" id="{d2b0dd4d-0527-4ea5-b979-344add2abd70}">
         <property name="assetPath">
-            <value>SFX/door-front-opening-a.wav</value>
+            <value>Characters/Actions/181052__jakobhandersen__pencil-check-mark-1.wav</value>
         </property>
         <property name="frequencyInKHz">
-            <value>44.0999985</value>
+            <value>48</value>
         </property>
         <property name="channelCount">
-            <value>2</value>
+            <value>1</value>
         </property>
         <property name="length">
-            <value>1.5843764172335602</value>
+            <value>0.53308333333333335</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
