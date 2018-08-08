@@ -31,7 +31,7 @@ For more info on AudioGaming's AudioWeather, please contact mailto:sales@fmod.co
             <value>2</value>
         </property>
         <relationship name="folder">
-            <destination>{c7e19230-ae7e-42bf-9526-6ead9510eb87}</destination>
+            <destination>{065df31f-f566-4b75-98d1-2a5f8d946ead}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{6dfb2867-23d0-44a3-ba7c-06baba3c4f9d}</destination>
