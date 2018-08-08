@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EventFolder" id="{fa4df294-498f-4a29-bdf1-9419092bcd75}">
+        <property name="name">
+            <value>light wooden door</value>
+        </property>
+        <relationship name="folder">
+            <destination>{ddc86736-f7bd-4b11-a2da-dac504e21881}</destination>
+        </relationship>
+    </object>
+</objects>
