@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Audiotest : MonoBehaviour {
 
-    [FMODUnity.EventRef]
-    public string selectSound;
-    FMOD.Studio.EventInstance soundevent;
+    //[FMODUnity.EventRef]
+    //public string selectSound;
+    //FMOD.Studio.EventInstance soundevent;
 
     public KeyCode presstoplaysound;
 
@@ -16,26 +16,31 @@ public class Audiotest : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        soundevent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
+        //soundevent = FMODUnity.RuntimeManager.CreateInstance(selectSound);
         GameObject mainCamera = GameObject.Find("MainCamera");
         _crosshair = mainCamera.GetComponent<Crosshair>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        FMODUnity.RuntimeManager.AttachInstanceToGameObject(soundevent, GetComponent<Transform>(), GetComponent<Rigidbody>());
+        //FMODUnity.RuntimeManager.AttachInstanceToGameObject(soundevent, GetComponent<Transform>(), GetComponent<Rigidbody>());
         Playsound();
 	}
 
     void Playsound()
     {
+        //if (Input.GetKeyDown(presstoplaysound))
+        //{
+        //    if(_crosshair.hit.transform.name == "Torch" || _crosshair.hit.transform.name == "Stepper")
+        //    {
+        //        soundevent.start();
+        //        Debug.Log("Aimed Event called");
+        //    }
+        //}
+
         if (Input.GetKeyDown(presstoplaysound))
         {
-            if(_crosshair.hit.transform.name == "Torch" || _crosshair.hit.transform.name == "Stepper")
-            {
-                soundevent.start();
-                Debug.Log("Aimed Event called");
-            }
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Environment/Earthquake", this.gameObject);
         }
     }
 }

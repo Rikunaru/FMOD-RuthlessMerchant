@@ -1,11 +1,21 @@
+{108d0138-f58f-446b-b41c-74cde9ae3bb4} event:/Ambience/Atmo Camp
+{d36b2988-e409-4c43-af9d-005aaa838bd5} event:/Ambience/Atmo Forest
+{a0e33e5a-2c35-4772-a0bb-717c7ba405b8} event:/Ambience/Atmo Tundra
+{63794e72-c612-4d49-b020-f68c61f4e5ce} event:/Ambience/Birds
 {67eb3b02-07e0-48ad-b4ff-f22efdfbe04a} event:/Ambience/Forest
 {f6193987-62b3-4153-a847-f04c500049b4} event:/Ambience/Torch
 {893b3fc4-dbcb-4f17-a466-08b3dccf3329} event:/Ambience/Tundra
+{eb77c459-d459-4ef6-a8c7-8fa1c397aa32} event:/Ambience/Wind General
+{6d35a117-3416-48ea-b792-5d2a4dc79fc3} event:/Characters/2DSimpleSteps
+{8fe9629b-9496-45ba-b58d-6495f62a6466} event:/Characters/BlendAllSteps
 {ff8024d3-9cda-44b4-90c3-58b48ba55bcf} event:/Characters/Player Footsteps_sample
-{8fe9629b-9496-45ba-b58d-6495f62a6466} event:/Characters/PlayerSteps
+{eeb2dfb0-e6c4-4b2d-9518-57d0fe70add7} event:/Characters/SeparatedAllSteps
+{4ea41829-5d7b-40d8-99eb-78df9518f588} event:/Characters/SimpleSteps
 {a1e0290f-a6d8-4ffa-9fc5-b23aaabc47c9} event:/Music/MenuDraft
+{78bf0c71-cacc-4bc6-a574-0845357f6920} event:/SFX/Blip_Select_Test
 {ff151beb-9706-409f-a74d-329009ab1cb2} bus:/
 {aa075bc9-8fe8-4607-9e29-c9a76a231b6a} bus:/Reverb
+{d56b3f7d-2292-495e-980d-61a0f0586ad3} bank:/Ambience
 {cdb38045-8ac9-437d-a9b4-0c71ed86455b} bank:/Music
 {bc675378-90eb-47c8-9253-25a627374886} bank:/SFX
 {277cc9a4-5b9f-48a0-81c5-cbc8b63e4184} bank:/Master Bank

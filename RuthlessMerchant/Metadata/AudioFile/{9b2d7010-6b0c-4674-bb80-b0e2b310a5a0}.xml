@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{9b2d7010-6b0c-4674-bb80-b0e2b310a5a0}">
+        <property name="assetPath">
+            <value>Characters/Steps/Soil/soilstep1.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.31346938775510202</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
+        </relationship>
+    </object>
+</objects>

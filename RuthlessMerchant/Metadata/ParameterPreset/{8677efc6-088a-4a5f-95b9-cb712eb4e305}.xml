@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{8677efc6-088a-4a5f-95b9-cb712eb4e305}">
+        <property name="name">
+            <value>FloorMaterial</value>
+        </property>
+        <relationship name="folder">
+            <destination>{3a81c378-3bb3-4c79-b57f-33366d9e5c2b}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{9e1b7ea4-f885-40eb-a4d4-6d90f95c0b36}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{9e1b7ea4-f885-40eb-a4d4-6d90f95c0b36}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

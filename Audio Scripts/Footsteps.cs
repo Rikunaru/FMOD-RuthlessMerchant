@@ -6,12 +6,17 @@ public class Footsteps : MonoBehaviour
 {
 
     [FMODUnity.EventRef]
-    public string inputsound;
-    bool playerismoving;
-    public float walkingspeed;
-    FMOD.Studio.EventInstance stepSound;
+    public string Steps;
+    public float stepSpeed;
+    public float stepsoundValue;
+    public float stepsoundFinalValue;
+    public float testgeding;
 
-
+    private string soundToPlay;
+    private bool playerismoving;
+    private FMOD.Studio.EventInstance stepSound;
+    private FMOD.Studio.ParameterInstance floorMaterial;
+ 
     void Update()
     {
         if (Input.GetAxis("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
@@ -26,26 +31,44 @@ public class Footsteps : MonoBehaviour
         }
     }
 
+    void CheckTerrain()
+    {
+        //floorMaterial.setValue(0.8f);
+    }
 
     void CallFootsteps()
     {
         if (playerismoving == true)
         {
-            Debug.Log("Stepsound playing");
-            FMODUnity.RuntimeManager.PlayOneShot(inputsound, GetComponent<Transform>().position);
+            //Debug.Log("Stepsound playing");
+            FMODUnity.RuntimeManager.PlayOneShot(Steps, GetComponent<Transform>().position);
+            stepSound.getParameterValue("FloorMaterial", out stepsoundValue, out stepsoundFinalValue);
+            //Debug.Log("Floorvalue: " + stepsoundValue + "Final Value" + stepsoundFinalValue);
+            floorMaterial.setValue(testgeding);
         }
     }
 
     private void Awake()
     {
-        stepSound = FMODUnity.RuntimeManager.CreateInstance(inputsound);
+        CheckTerrain();
+        
     }
 
     void Start()
     {
-        InvokeRepeating("CallFootsteps", 0, walkingspeed);
+        InvokeRepeating("CallFootsteps", 0, stepSpeed);
+        stepSound = FMODUnity.RuntimeManager.CreateInstance(Steps);
+        ///This one works!!
+        stepSound.getParameter("FloorMaterial", out floorMaterial);
+        ///
+        //stepSound.getParameter("FloorMaterial", out floorMaterial);
+        //stepSound.getParameterValue("FloorMaterial", out stepsoundValue, out stepsoundFinalValue);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log(other);
+    }
 
     void OnDisable()
     {
