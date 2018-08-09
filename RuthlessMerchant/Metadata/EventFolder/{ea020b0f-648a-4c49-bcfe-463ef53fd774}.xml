@@ -5,7 +5,7 @@
             <value>Book</value>
         </property>
         <relationship name="folder">
-            <destination>{1f115794-baca-44fb-a973-3d988bc9698b}</destination>
+            <destination>{a6765061-ef79-4afd-b755-a0e606957536}</destination>
         </relationship>
     </object>
 </objects>
