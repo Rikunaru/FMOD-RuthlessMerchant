@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{be4457de-cfaa-494e-ac43-e1ab7e370132}">
+    <object class="AudioFile" id="{dd78e28d-1bfe-4e6a-8eb7-09772b2d9e64}">
         <property name="assetPath">
-            <value>SFX/270589__michorvath__anvil-hit-1.wav</value>
+            <value>SFX/coins.wav</value>
         </property>
         <property name="frequencyInKHz">
-            <value>44.0999985</value>
+            <value>48</value>
         </property>
         <property name="channelCount">
             <value>1</value>
         </property>
         <property name="length">
-            <value>1.2715419501133787</value>
+            <value>7.0341041666666664</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
