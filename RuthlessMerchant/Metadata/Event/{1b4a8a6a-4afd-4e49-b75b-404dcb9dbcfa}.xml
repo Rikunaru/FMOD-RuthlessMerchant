@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{1b4a8a6a-4afd-4e49-b75b-404dcb9dbcfa}">
         <property name="name">
-            <value>Forging</value>
+            <value>hammer</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
         </property>
         <relationship name="folder">
-            <destination>{1f115794-baca-44fb-a973-3d988bc9698b}</destination>
+            <destination>{f1d45384-e85d-44a4-bc0b-60e4068e0416}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{8ea77bcb-05f4-416c-b423-fffae9991be9}</destination>
@@ -129,7 +129,7 @@
             <value>pitch</value>
         </property>
         <property name="amount">
-            <value>7.5</value>
+            <value>4.5</value>
         </property>
     </object>
     <object class="MixerBusEffectChain" id="{4799aa32-5d33-45ab-a164-bc42affa6f78}">
