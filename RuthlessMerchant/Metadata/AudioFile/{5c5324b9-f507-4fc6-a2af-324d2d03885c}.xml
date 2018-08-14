@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{c1de5ad8-2946-43e9-aff2-f1ea2fbd52a5}">
+    <object class="AudioFile" id="{5c5324b9-f507-4fc6-a2af-324d2d03885c}">
         <property name="assetPath">
-            <value>Characters/Minions/schwert oder schlag/Sword - clash (3).mp3</value>
+            <value>Characters/Minions/schwert oder schlag/bamboo-swoosh.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>44.0999985</value>
@@ -11,7 +11,7 @@
             <value>2</value>
         </property>
         <property name="length">
-            <value>2.6122448979591835</value>
+            <value>1.0025850340136055</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>

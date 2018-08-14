@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{7a94690c-1c3a-4cf7-ad0d-c05564d37fde}">
+    <object class="AudioFile" id="{7cd733d9-c7d3-4a0c-9932-15a7b5f12aa2}">
         <property name="assetPath">
-            <value>Characters/Minions/schwert oder schlag/275122__jagadamba__machete-03.wav</value>
+            <value>Characters/Minions/schwert oder schlag/clash01.wav</value>
         </property>
         <property name="frequencyInKHz">
-            <value>96</value>
+            <value>44.0999985</value>
         </property>
         <property name="channelCount">
-            <value>2</value>
+            <value>1</value>
         </property>
         <property name="length">
-            <value>0.66371875000000002</value>
+            <value>0.61746031746031749</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
