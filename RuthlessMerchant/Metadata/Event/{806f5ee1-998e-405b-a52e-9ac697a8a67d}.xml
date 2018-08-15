@@ -145,7 +145,7 @@
             <value>-10</value>
         </property>
         <property name="name">
-            <value>Audio 1</value>
+            <value>swoosh</value>
         </property>
         <relationship name="effectChain">
             <destination>{98d379ab-47f7-4372-ac2a-f531acb9c7e8}</destination>

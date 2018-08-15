@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{eada9bd6-e034-45a6-9b3d-063abf88d951}">
+        <property name="assetPath">
+            <value>Environment/cleaned_walking-on-dirt-with-heavy-boots-and-wind.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>39.048000000000002</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
+        </relationship>
+    </object>
+</objects>
