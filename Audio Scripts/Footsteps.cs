@@ -1,77 +1,127 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Footsteps : MonoBehaviour
+namespace RuthlessMerchant
 {
-
-    [FMODUnity.EventRef]
-    public string Steps;
-    public float stepSpeed;
-    public float stepsoundValue;
-    public float stepsoundFinalValue;
-    public float testgeding;
-
-    private string soundToPlay;
-    private bool playerismoving;
-    private FMOD.Studio.EventInstance stepSound;
-    private FMOD.Studio.ParameterInstance floorMaterial;
- 
-    void Update()
+    public class Footsteps : MonoBehaviour
     {
-        if (Input.GetAxis("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
+
+        [FMODUnity.EventRef]
+        public string Steps;
+        public float stepSpeed;
+
+        private float initialStepSpeed;
+        private string soundToPlay;
+        private bool playerismoving;
+        private bool isGrounded, justJumped;
+        private bool isCtrlPressed;
+        private bool isShiftPressed;
+        private FMOD.Studio.EventInstance stepSound;
+        private FMOD.Studio.ParameterInstance floorMaterial;
+        private Character character;
+
+        [SerializeField, Tooltip("Enter the Gameobject of this character")]
+        public GameObject movingCharacter;
+
+        public bool IsGrounded
         {
-            //Debug.Log("Character is moving");
-            playerismoving = true;
+            get { return isGrounded;  }
+            set
+            {
+                isGrounded = value;
+                if(isGrounded && !justJumped)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Characters/Steps/GroundLanding", GetComponent<Transform>().position);
+                    justJumped = true;
+                    Debug.Log("Landed");
+                }
+                if (!isGrounded)
+                {
+                    justJumped = false;
+                }
+            }
         }
-        else if (Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0)
+
+
+        void CallFootsteps()
         {
-            //Debug.Log("Character is not moving");
+            if (playerismoving == true && isGrounded)
+            {
+                //Debug.Log("Stepsound playing");
+                FMODUnity.RuntimeManager.PlayOneShot(Steps, GetComponent<Transform>().position);
+            }
+        }
+
+        void Start()
+        {
+            InvokeRepeating("CallFootsteps", 0, stepSpeed);
+            stepSound = FMODUnity.RuntimeManager.CreateInstance(Steps);
+            initialStepSpeed = stepSpeed;
+        }
+
+        void Update()
+        {
+            IsGrounded = movingCharacter.GetComponent<Player>().IsGrounded;
+
+            if(gameObject.tag == "Player")
+            {
+                checkMovementStatus();
+            }
+
+            if (Input.GetAxis("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
+            {
+                playerismoving = true;
+            }
+            else if (Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0)
+            {
+                playerismoving = false;
+            }
+
+
+        }
+
+        /// <summary>
+        /// Handles the rate at which Stepsounds are played depending on the state of movement
+        /// </summary>
+        private void checkMovementStatus()
+        {
+            if (Input.GetKey(KeyCode.LeftControl) && !isCtrlPressed)
+            {
+                Debug.Log("Player crouches");
+                isCtrlPressed = true;
+                CancelInvoke("CallFootsteps");
+                stepSpeed = stepSpeed * 1.5f;
+                InvokeRepeating("CallFootsteps", 0, stepSpeed);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                isCtrlPressed = false;
+                CancelInvoke("CallFootsteps");
+                stepSpeed = initialStepSpeed;
+                InvokeRepeating("CallFootsteps", 0, stepSpeed);
+            }
+            if (Input.GetKey(KeyCode.LeftShift) && !isShiftPressed)
+            {
+                Debug.Log("Player sprints");
+                isShiftPressed = true;
+                CancelInvoke("CallFootsteps");
+                stepSpeed = stepSpeed / 1.3f;
+                InvokeRepeating("CallFootsteps", 0, stepSpeed);
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                isShiftPressed = false;
+                CancelInvoke("CallFootsteps");
+                stepSpeed = initialStepSpeed;
+                InvokeRepeating("CallFootsteps", 0, stepSpeed);
+            }
+        }
+
+        void OnDisable()
+        {
             playerismoving = false;
         }
-    }
-
-    void CheckTerrain()
-    {
-        //floorMaterial.setValue(0.8f);
-    }
-
-    void CallFootsteps()
-    {
-        if (playerismoving == true)
-        {
-            //Debug.Log("Stepsound playing");
-            FMODUnity.RuntimeManager.PlayOneShot(Steps, GetComponent<Transform>().position);
-            stepSound.getParameterValue("FloorMaterial", out stepsoundValue, out stepsoundFinalValue);
-            //Debug.Log("Floorvalue: " + stepsoundValue + "Final Value" + stepsoundFinalValue);
-            floorMaterial.setValue(testgeding);
-        }
-    }
-
-    private void Awake()
-    {
-        CheckTerrain();
-        
-    }
-
-    void Start()
-    {
-        InvokeRepeating("CallFootsteps", 0, stepSpeed);
-        stepSound = FMODUnity.RuntimeManager.CreateInstance(Steps);
-        ///This one works!!
-        stepSound.getParameter("FloorMaterial", out floorMaterial);
-        ///
-        //stepSound.getParameter("FloorMaterial", out floorMaterial);
-        //stepSound.getParameterValue("FloorMaterial", out stepsoundValue, out stepsoundFinalValue);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        //Debug.Log(other);
-    }
-
-    void OnDisable()
-    {
-        playerismoving = false;
     }
 }

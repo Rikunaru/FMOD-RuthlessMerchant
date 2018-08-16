@@ -16,6 +16,10 @@
             <destination>{c0ede5d5-6f1e-4924-8f31-0691d3cf2f96}</destination>
             <destination>{6b2585ad-2937-4d8b-b801-50a9a908901f}</destination>
             <destination>{79979731-9ef0-4420-a424-7f9235d9cd2c}</destination>
+            <destination>{c1182b31-6e05-4dcb-8d2f-9fa40917bdb2}</destination>
+            <destination>{ea2ebb0b-5ac0-4ebc-b7f3-ca150b400c24}</destination>
+            <destination>{480f1c97-ac95-463b-8bea-7fbe1b458f70}</destination>
+            <destination>{57f0110f-cd8f-4ba6-bb68-4cfc186b395d}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{c27d7113-9a9c-4310-8a84-e370e3e35a42}</destination>
