@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{e614061a-11e2-4c35-8985-a9a04e92b41d}">
         <property name="name">
-            <value>FlipPage</value>
+            <value>Open Book</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
         </property>
         <relationship name="folder">
-            <destination>{a6765061-ef79-4afd-b755-a0e606957536}</destination>
+            <destination>{ea020b0f-648a-4c49-bcfe-463ef53fd774}</destination>
         </relationship>
         <relationship name="mixer">
             <destination>{015253ee-9d19-405d-9a53-1560ece45588}</destination>
