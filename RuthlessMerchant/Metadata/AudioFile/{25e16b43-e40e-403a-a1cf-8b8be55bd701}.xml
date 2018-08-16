@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{8b339bfb-664e-4ed0-a9cd-c3eff1ba77e0}">
+    <object class="AudioFile" id="{25e16b43-e40e-403a-a1cf-8b8be55bd701}">
         <property name="assetPath">
-            <value>Characters/Minions/marching_imperialisten/step04.wav</value>
+            <value>Characters/Minions/steps_freidenker/step01.wav</value>
         </property>
         <property name="frequencyInKHz">
-            <value>48</value>
+            <value>44.0999985</value>
         </property>
         <property name="channelCount">
-            <value>2</value>
+            <value>1</value>
         </property>
         <property name="length">
-            <value>0.53904166666666664</value>
+            <value>0.50362811791383222</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
