@@ -21,11 +21,9 @@ namespace RuthlessMerchant
         private FMOD.Studio.EventInstance stepSound;
         private FMOD.Studio.ParameterInstance floorMaterial;
         private Character character;
-        
 
         [SerializeField, Tooltip("Enter the Gameobject of this character")]
         public GameObject movingCharacter;
-        private Rigidbody characterRb;
 
         public bool IsGrounded
         {
@@ -35,7 +33,7 @@ namespace RuthlessMerchant
                 isGrounded = value;
                 if(isGrounded && !justJumped)
                 {
-                    //FMODUnity.RuntimeManager.PlayOneShot("event:/Characters/Steps/GroundLanding", GetComponent<Transform>().position);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Characters/Steps/GroundLanding", GetComponent<Transform>().position);
                     justJumped = true;
                     Debug.Log("Landed");
                 }
@@ -51,8 +49,8 @@ namespace RuthlessMerchant
         {
             if (playerismoving == true && isGrounded)
             {
-                Debug.Log("Stepsound playing");
-                FMODUnity.RuntimeManager.PlayOneShot(Steps, movingCharacter.GetComponent<Transform>().position);
+                //Debug.Log("Stepsound playing");
+                FMODUnity.RuntimeManager.PlayOneShot(Steps, GetComponent<Transform>().position);
             }
         }
 
@@ -61,26 +59,26 @@ namespace RuthlessMerchant
             InvokeRepeating("CallFootsteps", 0, stepSpeed);
             stepSound = FMODUnity.RuntimeManager.CreateInstance(Steps);
             initialStepSpeed = stepSpeed;
-            characterRb = movingCharacter.GetComponent<Rigidbody>();
         }
 
         void Update()
         {
-            IsGrounded = !movingCharacter.GetComponent<Player>().JustJumped;
+            IsGrounded = movingCharacter.GetComponent<Player>().IsGrounded;
 
-            if (gameObject.tag == "Player")
+            if(gameObject.tag == "Player")
             {
                 checkMovementStatus();
             }
 
-            if( characterRb.velocity.x > 0.1f || characterRb.velocity.y > 0.1f || characterRb.velocity.z > 0.1f)
+            if (Input.GetAxis("Vertical") >= 0.01f || Input.GetAxis("Horizontal") >= 0.01f || Input.GetAxis("Vertical") <= -0.01f || Input.GetAxis("Horizontal") <= -0.01f)
             {
                 playerismoving = true;
             }
-            else if (characterRb.velocity.x <= 0.1f || characterRb.velocity.y <= 0.1f)
+            else if (Input.GetAxis("Vertical") == 0 || Input.GetAxis("Horizontal") == 0)
             {
                 playerismoving = false;
             }
+
 
         }
 
