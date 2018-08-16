@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{f0b0832c-732a-4b30-89e1-67053104cae1}">
+    <object class="AudioFile" id="{f0b864d2-cd34-4aee-bcaf-3ac70fc9d776}">
         <property name="assetPath">
-            <value>Characters/Minions/marching_imperialisten/step07.wav</value>
+            <value>Characters/Minions/steps_imperialisten/step09.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>48</value>
@@ -11,7 +11,7 @@
             <value>2</value>
         </property>
         <property name="length">
-            <value>0.51439583333333339</value>
+            <value>0.48116666666666669</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>

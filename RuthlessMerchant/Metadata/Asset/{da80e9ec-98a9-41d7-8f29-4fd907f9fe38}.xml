@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="EncodableAsset" id="{b1d6b518-e1a1-4f15-b694-b3af6c320dee}">
+    <object class="EncodableAsset" id="{da80e9ec-98a9-41d7-8f29-4fd907f9fe38}">
         <property name="assetPath">
-            <value>Characters/Minions/marching_imperialisten/</value>
+            <value>Characters/Minions/steps_freidenker/</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
