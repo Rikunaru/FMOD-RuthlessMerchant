@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.01.10.00">
-    <object class="AudioFile" id="{719ea60b-a5b4-4160-941c-958661167af3}">
+    <object class="AudioFile" id="{79918076-cb76-41ae-82d5-952e59de5a48}">
         <property name="assetPath">
-            <value>Characters/Minions/steps_imperialisten/step05.wav</value>
+            <value>SFX/deepHorn.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
         </property>
         <property name="frequencyInKHz">
-            <value>48</value>
+            <value>44.0999985</value>
         </property>
         <property name="channelCount">
             <value>2</value>
         </property>
         <property name="length">
-            <value>0.47333333333333333</value>
+            <value>10.919183673469387</value>
         </property>
         <relationship name="masterAssetFolder">
             <destination>{04aa916a-2bd4-41e0-9dee-b2c43051977e}</destination>
