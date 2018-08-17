@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Workspace" id="{a7c3eb8b-dc88-417b-9ae9-4f6bbb662a26}">
         <property name="builtBanksOutputDirectory">
-            <value>../../Ruthless-Merchant/Ruthless Merchant/Assets/StreamingAssets</value>
+            <value>../../../Repository/Ruthless-Merchant/Ruthless Merchant/Assets/StreamingAssets</value>
         </property>
         <relationship name="masterEventFolder">
             <destination>{539e4df7-f57e-470e-9ddd-3c2ad7e3b179}</destination>
