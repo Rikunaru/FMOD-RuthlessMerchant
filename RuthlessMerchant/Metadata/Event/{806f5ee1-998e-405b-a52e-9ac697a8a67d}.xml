@@ -102,12 +102,14 @@
         <property name="length">
             <value>0.70000000000000007</value>
         </property>
+        <relationship name="modulators">
+            <destination>{228c6b21-fe5a-46a9-a617-55c85e5781fd}</destination>
+        </relationship>
         <relationship name="sounds">
             <destination>{cd615286-7754-4865-be7d-12b8246b50b8}</destination>
             <destination>{a117b347-b0fe-42c5-b30c-753f704bfada}</destination>
             <destination>{7dbe4448-a7b6-4d79-b639-f8427cddd47c}</destination>
             <destination>{cebd490a-ecb1-4a1b-8ee1-a29587cebae7}</destination>
-            <destination>{adf9dd81-e902-4e6d-906a-dee8f0a55cf0}</destination>
             <destination>{200d21ed-e293-41c5-a405-b193dc27a956}</destination>
             <destination>{89d6dad1-e438-447f-aa13-66f7f6842752}</destination>
         </relationship>
@@ -165,6 +167,14 @@
     </object>
     <object class="MixerBusPanner" id="{c86b6b3c-1faf-4547-abdd-6de039cd41cd}"/>
     <object class="MixerBusFader" id="{bc6fb010-60e6-4bce-82a1-b1ad0dd00b66}"/>
+    <object class="RandomizerModulator" id="{228c6b21-fe5a-46a9-a617-55c85e5781fd}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>6.5</value>
+        </property>
+    </object>
     <object class="SingleSound" id="{cd615286-7754-4865-be7d-12b8246b50b8}">
         <relationship name="audioFile">
             <destination>{7cd733d9-c7d3-4a0c-9932-15a7b5f12aa2}</destination>
@@ -183,11 +193,6 @@
     <object class="SingleSound" id="{cebd490a-ecb1-4a1b-8ee1-a29587cebae7}">
         <relationship name="audioFile">
             <destination>{47d00819-ac79-402b-8e14-33908bdc8724}</destination>
-        </relationship>
-    </object>
-    <object class="SingleSound" id="{adf9dd81-e902-4e6d-906a-dee8f0a55cf0}">
-        <relationship name="audioFile">
-            <destination>{9ec364a9-a5d4-4db8-a23a-6377a812bc10}</destination>
         </relationship>
     </object>
     <object class="SingleSound" id="{200d21ed-e293-41c5-a405-b193dc27a956}">
