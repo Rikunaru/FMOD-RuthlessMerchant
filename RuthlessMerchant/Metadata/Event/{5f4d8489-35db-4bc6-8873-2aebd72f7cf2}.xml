@@ -5,7 +5,7 @@
             <value>MinionStepsImperialists</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{361837d5-d9b1-43b7-8c87-387e16098ecf}</destination>
@@ -274,7 +274,6 @@
     <object class="MixerBusEffectChain" id="{763f834c-98d6-4d5f-9623-680787f89d73}">
         <relationship name="effects">
             <destination>{bb2ca8ab-cdb7-41c7-94e3-320ae46aaee5}</destination>
-            <destination>{b166b3d2-c52e-4155-9d18-02ef7850c81a}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{a5940190-2d51-4ca1-92e8-add848acafd9}"/>
@@ -395,7 +394,6 @@
     </object>
     <object class="MixerBusPanner" id="{98ab2d81-192f-459b-a3aa-d862fb6e2082}"/>
     <object class="MixerBusFader" id="{bb2ca8ab-cdb7-41c7-94e3-320ae46aaee5}"/>
-    <object class="SpatialiserEffect" id="{b166b3d2-c52e-4155-9d18-02ef7850c81a}"/>
     <object class="MixerBusFader" id="{1c4b0bfa-e211-4eb6-90bb-fb1900124be9}"/>
     <object class="MixerBusFader" id="{794bf528-c789-40da-a69b-684a0bdbcda3}"/>
     <object class="MixerBusFader" id="{76027085-ecff-49c4-9c64-985f2fe02c52}"/>

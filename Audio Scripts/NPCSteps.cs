@@ -37,8 +37,7 @@ public class NPCSteps : MonoBehaviour {
     {
         if (characterIsMoving == true)
         {
-            Debug.Log("NPC - Stepsound playing");
-            FMODUnity.RuntimeManager.PlayOneShot(Steps, this.GetComponent<Transform>().position);
+            FMODUnity.RuntimeManager.PlayOneShot(Steps, this.transform.position);
         }
     }
 }

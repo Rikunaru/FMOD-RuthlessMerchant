@@ -5,7 +5,7 @@
             <value>MinionStepsFreeminds</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="folder">
             <destination>{361837d5-d9b1-43b7-8c87-387e16098ecf}</destination>
@@ -143,6 +143,9 @@
         <property name="length">
             <value>0.57599999999999996</value>
         </property>
+        <property name="volume">
+            <value>-4.5</value>
+        </property>
         <relationship name="modulators">
             <destination>{a978537b-1230-4a38-92af-d460d5df263b}</destination>
         </relationship>
@@ -160,9 +163,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{81ea42f6-fa4c-488e-b02f-e52447bec394}">
-        <property name="volume">
-            <value>-4.5</value>
-        </property>
         <property name="name">
             <value>Audio 2</value>
         </property>
@@ -193,7 +193,6 @@
     <object class="MixerBusEffectChain" id="{ece8da1a-3eaf-4f82-9a80-93db81320d70}">
         <relationship name="effects">
             <destination>{6edd6d91-75a9-4072-86ca-a68ba2030909}</destination>
-            <destination>{20d39199-05d2-4b62-813e-7362445007f8}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{c2c57a4b-2130-457f-a9ac-40d4a87c4504}"/>
@@ -294,7 +293,6 @@
     </object>
     <object class="MixerBusPanner" id="{0f8b3a8f-7f8c-41f2-9926-2ac8498da051}"/>
     <object class="MixerBusFader" id="{6edd6d91-75a9-4072-86ca-a68ba2030909}"/>
-    <object class="SpatialiserEffect" id="{20d39199-05d2-4b62-813e-7362445007f8}"/>
     <object class="MixerBusFader" id="{a1d5cba8-64e1-4c9d-8537-9319ee956e67}"/>
     <object class="AutomationPoint" id="{c0eef961-3e76-4492-a9e4-20acfa8e5ec7}">
         <property name="position">
