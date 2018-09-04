@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{0aed40c1-63ab-419b-9942-d0c1622ee6b6}">
         <property name="name">
-            <value>StepsSoil</value>
+            <value>StepsCave</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
@@ -70,9 +70,6 @@
         <relationship name="modules">
             <destination>{587e6c79-27bb-4b32-818e-e0a3a74caa84}</destination>
         </relationship>
-        <relationship name="markers">
-            <destination>{b12aa711-84ca-4825-a43b-d87f6c480ff3}</destination>
-        </relationship>
     </object>
     <object class="EventMixerMaster" id="{bc40b95e-bb98-4e53-9cca-5f89a36c9e69}">
         <relationship name="effectChain">
@@ -114,20 +111,6 @@
         </relationship>
         <relationship name="output">
             <destination>{bc40b95e-bb98-4e53-9cca-5f89a36c9e69}</destination>
-        </relationship>
-    </object>
-    <object class="LoopRegion" id="{b12aa711-84ca-4825-a43b-d87f6c480ff3}">
-        <property name="position">
-            <value>0</value>
-        </property>
-        <property name="length">
-            <value>0.41999999999999998</value>
-        </property>
-        <relationship name="timeline">
-            <destination>{52242aad-b86f-4a89-8e68-580dc1117dfb}</destination>
-        </relationship>
-        <relationship name="markerTrack">
-            <destination>{874f1441-4a99-4cb7-adab-b25235df0368}</destination>
         </relationship>
     </object>
     <object class="MixerBusEffectChain" id="{98a3eaee-f948-4e44-9872-80ec898f2696}">
