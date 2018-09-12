@@ -87,7 +87,7 @@ For more info on AudioGaming's AudioWeather, please contact mailto:sales@fmod.co
             <destination>{12bbeb18-2d95-4535-b3b1-82e536557abe}</destination>
         </relationship>
         <relationship name="output">
-            <destination>{ff151beb-9706-409f-a74d-329009ab1cb2}</destination>
+            <destination>{10d5bff4-c326-4584-bd09-6e16ca4aa206}</destination>
         </relationship>
     </object>
     <object class="EventAutomatableProperties" id="{f2707e24-1c3a-4c60-bcee-65a3e45178f0}">
