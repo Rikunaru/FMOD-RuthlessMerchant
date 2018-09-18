@@ -143,9 +143,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{182f2238-9cd0-46ed-8ba4-d3d33d2e601c}">
-        <property name="volume">
-            <value>-10</value>
-        </property>
         <property name="name">
             <value>swoosh</value>
         </property>
